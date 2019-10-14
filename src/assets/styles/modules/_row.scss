@@ -1,0 +1,33 @@
+.row {
+    display: flex;
+    flex-direction: column;
+
+    &__b-margin-until-medium {
+        margin-bottom: 1rem;
+    }
+
+    @include atMedium { 
+        flex-direction: row;
+
+        &__b-margin-until-medium {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &--gutter:not(:last-child) {
+        padding-right: 0px;
+
+        @include atMedium { 
+            padding-right: 65px;
+        }
+    }
+    
+    &__column--1 {
+        flex: 1;
+    }
+    
+    &__column--2 {
+        flex: 2;
+    }
+    
+}
