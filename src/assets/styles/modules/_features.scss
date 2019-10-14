@@ -1,0 +1,53 @@
+.features {
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 100px;
+        row-gap: 2.5rem;
+
+        @include atMedium {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+
+        @include atSmall {
+            flex-direction: row;
+        }
+
+        @include atMedium {
+            flex-direction: column;
+        }
+
+        @include atLarge {
+            flex-direction: row;
+        }
+    }
+
+    &-item__icon {
+        object-fit: fill;
+        margin-right: 0;
+        
+        @include atSmall {
+            margin-right: 30px;
+        }
+
+    }
+
+    &-item__heading {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: .7rem;
+        margin-bottom: .8rem;
+        text-align: center;
+
+        @include atSmall {
+            font-size: 1.825rem;
+            text-align: left;
+            margin-top: 1rem;
+        }
+    }
+}
