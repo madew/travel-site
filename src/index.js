@@ -1,8 +1,9 @@
-import { hello } from './test';
+import hello from './assets/js/main';
 import 'normalize.css'
 import './assets/styles/styles.scss'
+import MobileMenu from './assets/js/modules/mobile-menu'
 
+const mobileMenu = new MobileMenu()
 
-//const clearViewEscapes = require('svg-inline-loader?classPrefix!./assets/images/icons/clear-view-escapes.svg');
+console.log(hello('Roman'))
 
-console.log(hello('Dudeesses!'))

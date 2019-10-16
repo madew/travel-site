@@ -1,0 +1,32 @@
+.primary-nav {
+    list-style: none;
+    display: block;
+    padding: 0;
+
+    @include atMedium {
+        
+    }
+
+    @include atMedium {
+        display: flex;
+    }
+
+    li {
+        font-weight: 300;
+        font-size: 2rem;
+        padding: 1rem 0;
+        text-align: center;
+        border-bottom: 2px dashed rgba(255,255,255, 0.3);
+
+        @include atMedium {
+            padding: 0 1rem 0 0;
+            font-size: 1rem;
+            border-bottom: none
+        }
+        
+        a {
+            color: #fff;
+        }
+    }
+    
+}

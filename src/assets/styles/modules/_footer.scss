@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: $mainBlue;
     color: #fff;
     padding: .5rem 0;
@@ -7,11 +7,11 @@ footer {
     &__text {
         display: block;
         margin-bottom: 1rem;
-        font-weight: 100;
+        font-weight: 200;
 
         @include atMedium {
-            display: block;
-            margin-bottom: 1rem;
+            display: inline-block;
+            margin-bottom: 0rem;
             margin-right: 1.4rem
         }
     }
