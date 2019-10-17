@@ -21,7 +21,11 @@
         @include atMedium {
             padding: 0 1rem 0 0;
             font-size: 1rem;
-            border-bottom: none
+            border-bottom: none;
+
+            & a.is-current-link {
+                color: #fabb69;
+            }
         }
         
         a {
