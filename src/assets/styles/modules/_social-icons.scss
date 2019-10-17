@@ -1,0 +1,24 @@
+.social-icons {
+    text-align: center;
+
+    &__icon {
+        background-color: $mainOrange;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        margin: 0 5px;
+        position: relative;
+
+        &:hover {
+            background-color: $mainBlue
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+}
