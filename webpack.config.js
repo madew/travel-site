@@ -3,9 +3,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 //const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        App: './src/index.js',
+        Vendor: './src/assets/js/vendor.js'
+    },
     output: {
-        filename: "main-[contentHash].js"
+        filename: "main-[contentHash].js",
+        filename: "vendor-[contentHash].js"
     },
     module: {
         rules: [

@@ -4,7 +4,6 @@ class Modal {
         this.modal = document.querySelector('.modal');
         this.closeModalButton = document.querySelector('.modal__close');
         this.events();
-        console.log(this.openModalButtons);
     }
 
 
@@ -14,11 +13,9 @@ class Modal {
             modalBtn.addEventListener('click', this.openModal.bind(this))
         })
 
-
         this.closeModalButton.addEventListener('click', this.closeModal.bind(this))
 
         document.addEventListener('keydown', event => {
-            console.log(event)
             if (event.key === 'Escape') {
                 this.closeModal()
             }

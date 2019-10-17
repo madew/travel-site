@@ -14,8 +14,10 @@
         background: #e0e6ef;
         padding: 1.2rem 0 0 0;
         @include atMedium {
-            background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
-            background-size: cover;
+            &.lazyloaded {   
+                background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
+                background-size: cover;
+            }
             padding: 1.2rem 0 4.2rem 0;
         }
     }
