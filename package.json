@@ -6,7 +6,7 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazysizes": "^5.1.2",
     "normalize.css": "^8.0.1",
     "smooth-scroll": "^16.1.0",
