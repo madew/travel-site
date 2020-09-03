@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "lazysizes": "^5.1.2",
+    "lazysizes": "^5.2.1",
     "normalize.css": "^8.0.1",
     "smooth-scroll": "^16.1.0",
     "waypoints": "^4.0.1"
